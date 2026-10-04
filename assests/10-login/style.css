@@ -1,0 +1,19 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .con {
+            min-height: 100vh;
+            width: 100vw;
+            background: linear-gradient(90deg, skyblue, purple 80%);
+            display: flex;
+            align-items: center;
+            padding-left: 30vw;
+
+        }

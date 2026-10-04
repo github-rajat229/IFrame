@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <title>UI-Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .con{
+            height: 100vh;
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            height: 70vh;
+            width: 70vw;
+            box-shadow: 1.5vh 1.5vh 1.5vh rgba(0, 0, 0, 0.3);
+            border-radius: 3vh;
+            /* border: 1px solid black; */
+            display: flex;
+            position: relative;
+        }
+        .left, .right, .center{
+            /* border: 1px solid black; */
+            height: 100%;
+        }
+        .left{
+            width: 2vw;
+            background-color: rgb(10, 10, 79);
+            border-radius: 4.5vh;
+        }
+        .center{
+            width: 62vw;
+            font-weight: bolder;
+            font-size: 13vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(1, 1, 132);
+            background-color: rgb(244,244, 244);
+            border-radius: 3vh;
+        }
+        p{
+            margin-left: 3vh;
+        }
+        .right{
+            width: 36vw;
+            border-radius: 1.5vh;
+            position: relative;
+        }
+        .top{
+            /* border: 1px solid black; */
+            height: 30%;
+            width: 100%;
+        }
+        .top-in{
+            height: 90%;
+            border-top-left-radius: 3vh;
+            border-top-right-radius: 3vh;
+
+            /* border: 1px solid black; */
+            background-color: navy;
+        }
+        .bottom{
+            height: 70%;
+            /* border: 1px solid black; */
+        }
+        .circle{
+            position: absolute;
+            height: 18vh;
+            width: 18vh;
+            border: 0.75vh solid navy;
+            border-radius: 50%;
+            top: 12vh;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border: 0.45vh solid white;
+        }
+        .bottom>h1{
+            text-align: center;
+            font-size: 3.5vh;
+            margin-top: 3%;
+        }
+        .bottom>h1:first-of-type {
+            margin-top: 10vh;
+        }
+        .icon{
+            margin: 4%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 1vh;
+            /* font-size: 30px; */
+        }
+        .fa-instagram{
+            background: linear-gradient(purple, red, yellow, orange);
+            background-clip: text;
+            color: transparent;
+            font-size: 3vh;
+        }
+        .fa-linkedin{
+            color: rgb(70, 70, 208);
+            font-size: 3vh;
+        }   
+        .fa-facebook{
+            color: blue;
+            font-size: 3vh;
+        }
+        .fa-github{
+            color: rgb(0, 0, 0);
+            font-size: 3vh;
+        }
+        .fa-behance{
+            color: rgb(0, 139, 90);
+            font-size: 3vh;
+        }
+        .fa-heart{
+            color: red;
+            font-size: 3vh;
+        }
+        .fa-comment{
+            color: rgb(213, 213, 213);
+            font-size: 3vh;
+        }
+        .fa-share{
+            color: rgb(5, 95, 5);
+            font-size: 3vh;
+        }
+        .button{
+            height: 20%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .b1{
+            border-radius: 7.5vh;
+            height: 40%;
+            width: 40%;
+            background-color: navy; 
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box">
+            <div class="left"></div>
+            <div class="center">
+                <p>Profile Card UI UX Design</p>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <div class="top-in">
+                        <div class="circle">
+                            <img src="assests/image3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h1>Website Developer</h1>
+                    <h1>Dezyne École College</h1>
+                    <h1>BCA 1st Year</h1>
+                    <div class="icon">
+                        <i class="fa fa-brands fa-facebook fa-2x"></i>
+                        <i class="fa fa-brands fa-instagram fa-2x"></i>
+                        <i class="fa fa-brands fa-linkedin fa-2x"></i>
+                        <i class="fa fa-brands fa-behance fa-2x"></i>
+                        <i class="fa fa-brands fa-github fa-2x"></i>
+                    </div>
+                    <div class="button">
+                        <div class="b1">Subscribe</div>
+                        <div class="b1">Message</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-solid fa-heart fa-2x"></i>60.4K
+                        <i class="fa fa-solid fa-comment fa-2x"></i>20K
+                        <i class="fa fa-solid fa-share fa-2x"></i>12.6K
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

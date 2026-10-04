@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        form {
+            height: auto;
+            width: 58vh;
+            background-color: white;
+            border-radius: 4vh;
+            padding: 4vh 3vh;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3.5vh;
+            margin-top: 1vh;
+            margin-bottom: 2vh;
+        }
+        .email, .password, .login {
+            width: 90%;
+            margin: auto;
+            margin-top: 2.5vh;
+            font-size: 1.8vh;
+        }
+        input {
+            height: 5.5vh;
+            width: 100%;
+            margin-top: 1vh;
+            font-size: 1.6vh;
+            padding: 0 1.5vh;
+            border: 1px solid #ccc;
+            border-radius: 1vh;
+        }
+        p {
+            margin-top: 1vh;
+        }
+        #login {
+            background: linear-gradient(90deg, skyblue, purple 80%);
+            border-radius: 2.5vh;
+            border: none;
+            color: white;
+            font-size: 1.8vh;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 2vh;
+            height: 5.5vh;
+        }
+        .password > p {
+            color: grey;
+            font-style: italic;
+            font-size: 1.5vh;
+        }
+        .login > p {
+            text-align: center;
+            margin-top: 2vh;
+            font-size: 1.6vh;
+        }
+        a {
+            text-decoration: none;
+            font-style: italic;
+        }
+        #login:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <form action="">
+            <h1>Log In Form</h1>
+            <div class="email">
+                <label for="">Email</label>
+                <br>
+                <input type="email" placeholder="xyz@gmail.com">
+            </div>
+            <div class="password">
+                <label for="">Password</label>
+                <br>
+                <input type="password" placeholder="abcd@1234">
+                <p>Forget Password?</p>
+            </div>
+            <div class="login">
+                <input type="button" value="Login" id="login">
+                <p>Not a Member? <a href="signup.html">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
